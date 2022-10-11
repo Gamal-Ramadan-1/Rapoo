@@ -3,19 +3,26 @@
     <Layout />
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 logo-footer">
-          <p class="mb-3">
+        <div class="col-lg-4 col-md-12 col-sm-12 logo-footer">
+          <h2 class="mb-4 headers-footer">
             <a href="#" class="text-light">Rapoo</a>
-          </p>
+          </h2>
           <p>
             Each theme featured at the Bootstrap marketplace has been reviewed
             by Bootstrap's creators.Lorem ipsum dolor sit amet, consectetur
             adipisicing elit.
           </p>
         </div>
-        <div class="col-lg-3"></div>
-        <div class="col-lg-2"></div>
-        <div class="col-lg-3"></div>
+        <div class="col-lg-3 col-md-12 col-sm-12 account">
+          <h2 class="mb-4 headers-footer text-light text-capitalize fw-bold">
+            account
+          </h2>
+          <p v-for="accountlink of accountlinks" :key="accountlink">
+            <a href="#" class="text-capitalize">{{ accountlink }}</a>
+          </p>
+        </div>
+        <div class="col-lg-2 col-lg-6 col-sm-12"></div>
+        <div class="col-lg-3 col-lg-6 col-sm-12"></div>
       </div>
     </div>
   </footer>
@@ -25,6 +32,17 @@ import Layout from "../Layout/Layout.vue";
 export default {
   name: "Footer",
   components: { Layout },
+  data() {
+    return {
+      accountlinks: [
+        "terms and conditions",
+        "privacy policy",
+        "affiliate services",
+        "help and support",
+        "frequently asked question",
+      ],
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -40,9 +58,9 @@ footer {
   background-position: 50%;
   background-size: cover;
   .logo-footer {
-    p {
-      a {
-        font-size: 32px;
+    .headers-footer {
+      h2 {
+        font-size: 28px;
       }
     }
     p {
@@ -50,6 +68,16 @@ footer {
       line-height: 2;
       font-size: 14px;
       width: 85%;
+    }
+  }
+  .account {
+    h2 {
+      font-size: 22px;
+    }
+    p {
+      a {
+        color: gray;
+      }
     }
   }
 }
