@@ -2,7 +2,7 @@
   <footer class="py-5">
     <Layout />
     <div class="container">
-      <div class="row">
+      <div class="row gy-5">
         <div class="col-lg-4 col-md-12 col-sm-12 logo-footer">
           <h2 class="mb-4 headers-footer">
             <a href="#" class="text-light">Rapoo</a>
@@ -23,13 +23,23 @@
         </div>
         <div class="col-lg-2 col-md-6 col-sm-12 about">
           <h2 class="mb-4 headers-footer text-light text-capitalize fw-bold">
-            account
+            about
           </h2>
           <p v-for="aboutlink of aboutlinks" :key="aboutlink">
             <a href="#" class="text-capitalize">{{ aboutlink }}</a>
           </p>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12"></div>
+        <div class="col-lg-3 col-md-6 col-sm-12 socials">
+          <h2 class="mb-4 headers-footer text-light text-capitalize fw-bold">
+            socials
+          </h2>
+          <p v-for="socialslink of socialslinks" :key="socialslink">
+            <a href="#" class="text-capitalize"
+              ><i :class="socialslink.Icon + ' me-2'"></i>
+              {{ socialslink.NameSocial }}</a
+            >
+          </p>
+        </div>
       </div>
     </div>
   </footer>
@@ -54,6 +64,28 @@ export default {
         "pricing",
         "products shop",
         "contact",
+      ],
+      socialslinks: [
+        {
+          Icon: "fa-brands fa-facebook-f",
+          NameSocial: "facebook",
+        },
+        {
+          Icon: "fa-brands fa-twitter",
+          NameSocial: "twitter",
+        },
+        {
+          Icon: "fa-brands fa-pinterest-p",
+          NameSocial: "pinterest",
+        },
+        {
+          Icon: "fa-brands fa-linkedin",
+          NameSocial: "linkesin",
+        },
+        {
+          Icon: "fa-brands fa-youtube",
+          NameSocial: "youtube",
+        },
       ],
     };
   },
@@ -85,7 +117,8 @@ footer {
     }
   }
   .account,
-  .about {
+  .about,
+  .socials {
     h2 {
       font-size: 22px;
     }
