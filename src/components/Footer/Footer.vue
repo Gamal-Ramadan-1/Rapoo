@@ -21,8 +21,15 @@
             <a href="#" class="text-capitalize">{{ accountlink }}</a>
           </p>
         </div>
-        <div class="col-lg-2 col-lg-6 col-sm-12"></div>
-        <div class="col-lg-3 col-lg-6 col-sm-12"></div>
+        <div class="col-lg-2 col-md-6 col-sm-12 about">
+          <h2 class="mb-4 headers-footer text-light text-capitalize fw-bold">
+            account
+          </h2>
+          <p v-for="aboutlink of aboutlinks" :key="aboutlink">
+            <a href="#" class="text-capitalize">{{ aboutlink }}</a>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12"></div>
       </div>
     </div>
   </footer>
@@ -40,6 +47,13 @@ export default {
         "affiliate services",
         "help and support",
         "frequently asked question",
+      ],
+      aboutlinks: [
+        "services",
+        "about us",
+        "pricing",
+        "products shop",
+        "contact",
       ],
     };
   },
@@ -70,7 +84,8 @@ footer {
       width: 85%;
     }
   }
-  .account {
+  .account,
+  .about {
     h2 {
       font-size: 22px;
     }
