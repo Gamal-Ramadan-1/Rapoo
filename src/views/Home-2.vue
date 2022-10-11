@@ -1,7 +1,7 @@
 <template></template>
 <script>
 export default {
-  name: "Home-1",
+  name: "Home-2",
 };
 </script>
 <style lang="scss" scoped>
