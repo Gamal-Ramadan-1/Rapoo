@@ -1,7 +1,7 @@
 <template>
-  <footer class="py-5">
+  <footer class="pt-5 pb-4">
     <Layout />
-    <div class="container">
+    <div class="container mb-5">
       <div class="row gy-5">
         <div class="col-lg-4 col-md-12 col-sm-12 logo-footer">
           <h2 class="mb-4 headers-footer">
@@ -41,6 +41,12 @@
           </p>
         </div>
       </div>
+    </div>
+    <hr />
+    <div class="copy-right text-center pt-4">
+      <p>
+        &copy; copyright <a href="#">bootstrap templates</a> all rights reversed
+      </p>
     </div>
   </footer>
 </template>
@@ -125,6 +131,23 @@ footer {
     p {
       a {
         color: gray;
+      }
+    }
+  }
+  hr {
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+  }
+  .copy-right {
+    p {
+      text-transform: capitalize;
+      color: gray;
+      a {
+        color: $Green;
+      }
+      a:hover {
+        color: rgb(81, 81, 239);
       }
     }
   }
