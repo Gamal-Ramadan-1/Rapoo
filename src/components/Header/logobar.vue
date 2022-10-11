@@ -175,6 +175,7 @@ a {
   border-radius: 5px;
   background-color: white;
   box-shadow: 0 0 5px 2px rgb(181, 179, 179);
+  z-index: 999;
   a {
     font-size: 12px;
     padding: 10px 80px 10px 20px;
