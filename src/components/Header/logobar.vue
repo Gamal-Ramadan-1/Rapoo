@@ -120,7 +120,7 @@ a {
   .email-us,
   .holiday {
     float: right;
-    svg {
+    svg,i {
       color: $Green;
       font-size: 45px;
     }
