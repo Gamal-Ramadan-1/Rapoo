@@ -32,7 +32,7 @@
                   Get a better deal and start
                   <span class="d-lg-block d-inline"> saving money today </span>
                 </h2>
-                <p class="">
+                <p>
                   We compare hundreds of leading products and plans across
                   many<span class="d-lg-block d-inline">
                     categories to bring you the best value for money.</span

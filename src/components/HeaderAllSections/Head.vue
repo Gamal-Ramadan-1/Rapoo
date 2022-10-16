@@ -21,7 +21,4 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/SCSS/Main.scss";
-p {
-  color: #6c757d;
-}
 </style>
