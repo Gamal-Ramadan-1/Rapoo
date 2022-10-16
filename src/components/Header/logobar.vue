@@ -45,7 +45,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+        <i class="fa-solid fa-bars"></i>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
