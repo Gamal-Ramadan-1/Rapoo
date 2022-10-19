@@ -14,7 +14,7 @@ export default {
   height: 100%;
   z-index: -1;
   background-color: $Layout;
-  opacity: 0.9;
+  opacity: 0.95;
   top: 0px;
 }
 </style>

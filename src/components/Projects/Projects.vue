@@ -1,5 +1,6 @@
 <template>
   <section class="projects-top">
+    <Layout />
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-sm-12">
@@ -74,16 +75,21 @@
   </section>
 </template>
 <script>
+import Layout from "../Layout/Layout.vue";
 export default {
   name: "Projects",
+  components: { Layout },
 };
 </script>
 <style lang="scss" scoped>
 @import "@/SCSS/Main.scss";
 .projects-top {
-  background-color: $Dark;
   padding: 80px 0px 180px 0px;
+  background-image: url("@/Imgs/banner_bg.jpg");
   margin-bottom: 30px;
+  position: relative;
+  z-index: 0;
+  object-fit: cover;
   p {
     font-size: 18px;
     color: rgb(177, 176, 176);
@@ -92,6 +98,8 @@ export default {
 .projects-bottom {
   margin-top: -130px;
   padding-bottom: 130px;
+  position: relative;
+  z-index: 2;
   img {
     border-radius: 10px;
     object-fit: cover;
