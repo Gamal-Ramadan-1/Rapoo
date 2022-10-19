@@ -1,5 +1,6 @@
 <template>
   <section class="services-2">
+    <div class="layout"></div>
     <div class="container">
       <Head
         MainHead="web services"
@@ -66,12 +67,24 @@ export default {
 <style lang="scss" scoped>
 @import "@/SCSS/Main.scss";
 .services-2 {
-  background-image: linear-gradient(
-    30deg,
-    rgba(121, 110, 255, 0.95) 0%,
-    rgba(33, 200, 122, 0.95) 100%
-  );
+  background-image: url("@/Imgs/6.jpg");
+  object-fit: cover;
   padding: 70px 0px;
+  position: relative;
+  z-index: 0;
+  .layout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(
+      30deg,
+      rgba(121, 110, 255, 0.95) 0%,
+      rgba(33, 200, 122, 0.95) 100%
+    );
+    opacity: 0.9;
+    top: 0px;
+  }
   p,
   h4 {
     color: #eee;
