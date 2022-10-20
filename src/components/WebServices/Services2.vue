@@ -68,6 +68,7 @@ export default {
 @import "@/SCSS/Main.scss";
 .services-2 {
   background-image: url("@/Imgs/6.jpg");
+  background-attachment: fixed;
   object-fit: cover;
   padding: 70px 0px;
   position: relative;
