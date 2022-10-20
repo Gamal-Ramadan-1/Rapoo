@@ -49,10 +49,10 @@
                     >
                       <div class="d-flex">
                         <div class="icon mt-1">
-                          <i class="fa-solid fa-cloud p-3 me-2"></i>
+                          <i :class="swiper.Icon + ' p-3 me-2'"></i>
                         </div>
                         <div class="content">
-                          <h4 class="text-uppercase">{{ swiper }}</h4>
+                          <h4 class="text-uppercase">{{ swiper.Header }}</h4>
                           <p class="m-0">
                             Our team are experts in matching you
                             <span class="d-block">
@@ -105,10 +105,22 @@ export default {
         },
       ],
       swipers: [
-        "WEB HOSTING",
-        "OFFICE CLOUD",
-        "BACKUP SYSTEM",
-        "CLOUD HOSTING",
+        {
+          Header: "WEB HOSTING",
+          Icon: "fa-solid fa-cloud",
+        },
+        {
+          Header: "OFFICE CLOUD",
+          Icon: "fa-solid fa-globe",
+        },
+        {
+          Header: "BACKUP SYSTEM",
+          Icon: "fa-solid fa-rotate",
+        },
+        {
+          Header: "CLOUD HOSTING",
+          Icon: "fa-solid fa-server",
+        },
       ],
     };
   },
