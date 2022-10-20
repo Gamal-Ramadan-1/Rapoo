@@ -6,6 +6,7 @@
   <Pricing />
   <Projects />
   <Testimonial />
+  <OurNews />
 </template>
 <script>
 import SliderHome from "@/components/Sliders/SliderHome.vue";
@@ -16,6 +17,7 @@ import Services2 from "@/components/WebServices/Services2.vue";
 import Pricing from "@/components/Pricing/Pricing.vue";
 import Projects from "@/components/Projects/Projects.vue";
 import Testimonial from "@/components/Testimonial/Testimonial.vue";
+import OurNews from "@/components/OurNews/OurNews.vue";
 export default {
   name: "Home-1",
   components: {
@@ -27,6 +29,7 @@ export default {
     Pricing,
     Projects,
     Testimonial,
+    OurNews,
   },
 };
 </script>

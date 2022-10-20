@@ -53,7 +53,7 @@
           <li class="nav-item me-2">
             <div class="links-test relative">
               <router-link class="nav-link" tag="a" to="/"
-                >home <i class="fa-solid fa-sort-down mb-1"></i
+                >home <i class="fa-solid fa-sort-down arrow-down"></i
               ></router-link>
               <div class="home-pages">
                 <router-link class="d-block text-dark" tag="a" to="/Home2"
@@ -120,7 +120,8 @@ a {
   .email-us,
   .holiday {
     float: right;
-    svg,i {
+    svg,
+    i {
       color: $Green;
       font-size: 45px;
     }
@@ -223,6 +224,10 @@ a {
       display: inline-block;
     }
     margin-top: 0px;
+  }
+  .navbar {
+    // padding: 0px 20px;
+    margin: 20px;
   }
 }
 @media only screen and (max-width: 426px) {
